@@ -147,20 +147,6 @@ Repository ini berisi contoh kode, latihan, dan catatan berdasarkan buku **Hands
 
 ---
 
-### **Appendices**  
-
-A. **Exercise Solutions**  
-B. **Machine Learning Project Checklist**  
-C. **SVM Dual Problem**  
-D. **Autodiff**  
-E. **Other Popular ANN Architectures**  
-F. **Special Data Structures**  
-G. **TensorFlow Graphs**  
-
----
-
-**Index**
-
 ## Rangkuman Per-Chapter
 
 ### 1. **Lanskap Pembelajaran Mesin**
