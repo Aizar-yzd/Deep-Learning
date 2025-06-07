@@ -1,9 +1,11 @@
+ ![img](https://github.com/user-attachments/assets/2328157c-dbe9-49b0-8127-33508b835764)
+
 # Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow
 
 Repository ini berisi contoh kode, latihan, dan catatan berdasarkan buku **Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow** oleh Aurélien Géron. Buku ini memberikan wawasan praktis tentang pembelajaran mesin menggunakan pustaka Python seperti Scikit-Learn, Keras, dan TensorFlow.
 
 # Daftar Isi
- 
+
 - The Machine Learning Tsunami  
 - Machine Learning in Your Projects  
 - Objective and Approach  
