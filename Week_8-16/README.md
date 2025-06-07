@@ -4,107 +4,67 @@ Repository ini berisi contoh kode, latihan, dan catatan berdasarkan buku **Hands
 
 ## Daftar Isi
 
-### Part I: Dasar-Dasar Pembelajaran Mesin
-1. **The Machine Learning Landscape**
-   - Apa itu Pembelajaran Mesin?
-   - Mengapa Menggunakan Pembelajaran Mesin?
-   - Contoh Aplikasi
-   - Jenis-Jenis Sistem Pembelajaran Mesin
-   - Tantangan Utama dalam Pembelajaran Mesin
-   - Pengujian dan Validasi
-   - Penyempurnaan dan Pemilihan Model
+### 1. **Lanskap Pembelajaran Mesin**
+   Bab ini memberikan gambaran umum tentang apa itu pembelajaran mesin, berbagai jenis sistem pembelajaran mesin, dan tantangan utama yang dihadapi dalam proyek pembelajaran mesin.
 
-2. **End-to-End Machine Learning Project**
-   - Bekerja dengan Data Nyata
-   - Pembersihan dan Prakondisi Data
-   - Skalasi Fitur dan Pipeline Transformasi
-   - Pemilihan dan Evaluasi Model
-   - Penyempurnaan Model
+### 2. **Proyek Pembelajaran Mesin End-to-End**
+   Menyajikan langkah-langkah dalam proyek pembelajaran mesin, mulai dari memahami masalah, mengumpulkan data, hingga meluncurkan sistem pembelajaran mesin yang siap digunakan.
 
-3. **Classification**
-   - Klasifikasi Biner dengan Scikit-Learn
-   - Ukuran Kinerja: Akurasi, Precision, Recall, Kurva ROC
-   - Klasifikasi Multikelas dan Multilabel
-   - Analisis Kesalahan
+### 3. **Klasifikasi**
+   Membahas teknik-teknik untuk klasifikasi data, termasuk evaluasi model menggunakan matriks kebingungannya dan pengukuran lainnya seperti presisi, recall, dan ROC curve.
 
-4. **Training Models**
-   - Regresi Linear dan Polinomial
-   - Gradient Descent dan Optimisasi
-   - Teknik Regularisasi
-   - Regresi Logistik
+### 4. **Pelatihan Model**
+   Bab ini mengajarkan dasar-dasar pelatihan model, termasuk regresi linear, regresi logistik, dan pemrograman gradien.
 
-5. **Support Vector Machines**
-   - SVM Linear dan Nonlinear
-   - Regresi SVM dan Fungsi Keputusan
-   - Metode Kernel
+### 5. **Support Vector Machines**
+   Fokus pada algoritma SVM untuk klasifikasi dan regresi, termasuk penerapan kernel untuk masalah non-linear.
 
-6. **Decision Trees**
-   - Pelatihan dan Visualisasi Pohon Keputusan
-   - Membuat Prediksi
-   - Regularisasi dan Kompleksitas Model
-   - Ketidakstabilan Pohon Keputusan
+### 6. **Pohon Keputusan**
+   Menjelaskan cara membuat dan mengoptimalkan model pohon keputusan untuk klasifikasi dan regresi.
 
-7. **Ensemble Learning and Random Forests**
-   - Bagging, Pasting, dan Random Forests
-   - Boosting dan Gradient Boosting
-   - Stacking Klasifikator
+### 7. **Ensemble Learning dan Random Forests**
+   Memperkenalkan teknik ensemble learning, seperti bagging, boosting, dan Random Forests untuk meningkatkan kinerja model.
 
-8. **Dimensionality Reduction**
-   - PCA (Principal Component Analysis)
-   - t-SNE dan Teknik Reduksi Dimensionalitas Lainnya
+### 8. **Pengurangan Dimensionalitas**
+   Teknik untuk mengurangi kompleksitas data, seperti PCA dan teknik pembelajaran manifold untuk visualisasi data.
 
-9. **Unsupervised Learning Techniques**
-   - Clustering: K-Means, DBSCAN
-   - Deteksi Anomali dan Deteksi Novelti
-   - Model Gaussian Mixture
+### 9. **Teknik Pembelajaran Tak Terawasi**
+   Fokus pada teknik clustering, seperti K-Means dan DBSCAN, serta deteksi anomali dan pembelajaran asosiasi.
 
-### Part II: Neural Networks and Deep Learning
-10. **Introduction to Artificial Neural Networks with Keras**
-    - Dari Neuron Biologis ke Neuron Buatan
-    - Perceptron dan MLP (Multilayer Perceptron)
-    - Implementasi MLP dengan Keras
-    - Penyempurnaan Hyperparameter untuk Jaringan Saraf
+### 10. **Pengenalan Jaringan Saraf Tiruan dengan Keras**
+   Membahas dasar-dasar jaringan saraf tiruan dan implementasinya menggunakan Keras untuk berbagai tugas seperti klasifikasi dan regresi.
 
-11. **Training Deep Neural Networks**
-    - Masalah Vanishing/Exploding Gradients
-    - Normalisasi Batch
-    - Transfer Learning
-    - Optimizer dan Penjadwalan Learning Rate
+### 11. **Pelatihan Jaringan Saraf Dalam**
+   Mengajarkan teknik-teknik pelatihan lanjutan untuk jaringan saraf dalam, termasuk masalah gradien yang menghilang dan pembelajaran transfer.
 
-12. **Custom Models and Training with TensorFlow**
-    - Menyesuaikan Fungsi Kerugian dan Metrik
-    - Menggunakan Lapisan, Model, dan Loop Pelatihan Kustom
+### 12. **Model Kustom dan Pelatihan dengan TensorFlow**
+   Cara membuat model jaringan saraf khusus dan melatihnya menggunakan TensorFlow, termasuk penggunaan komponen kustom seperti fungsi kehilangan dan lapisan kustom.
 
-13. **Loading and Preprocessing Data with TensorFlow**
-    - Data API dan TensorFlow Dataset
-    - Prakondisi dan Enkode Fitur Kategorikal
+### 13. **Memuat dan Memproses Data dengan TensorFlow**
+   Menyajikan teknik-teknik pemuatan dan pemrosesan data untuk pelatihan model, termasuk penggunaan TFRecord dan API TensorFlow.
 
-14. **Deep Computer Vision Using Convolutional Neural Networks**
-    - Lapisan Konvolusional dan Pooling
-    - Arsitektur CNN (LeNet, AlexNet, VGG, ResNet)
-    - Deteksi Objek dan Segmentasi Semantik
+### 14. **Visi Komputer Mendalam dengan Jaringan Saraf Konvolusional**
+   Pengenalan tentang CNN untuk tugas pengenalan gambar, serta implementasi model CNN dengan TensorFlow.
 
-15. **Processing Sequences Using RNNs and CNNs**
-    - Recurrent Neural Networks (RNNs) untuk Prediksi Urutan
-    - Menangani Urutan Panjang
-    - Deep RNN dan Peramalan
+### 15. **Memproses Urutan Menggunakan RNN dan CNN**
+   Menjelaskan cara kerja jaringan saraf rekuren (RNN) untuk memproses urutan data dan bagaimana menggunakan CNN untuk analisis urutan.
 
-16. **Natural Language Processing with RNNs and Attention**
-    - Generasi Teks dan Analisis Sentimen
-    - Encoder-Decoder Networks
-    - Mekanisme Perhatian dan Transformers
+### 16. **Pemrosesan Bahasa Alami dengan RNN dan Attention**
+   Pembahasan tentang model RNN dan mekanisme perhatian (Attention) untuk tugas pemrosesan bahasa alami seperti analisis sentimen dan penerjemahan mesin.
 
-17. **Representation Learning and Generative Learning Using Autoencoders and GANs**
-    - Autoencoders untuk Kompresi Data dan Deteksi Anomali
-    - Generative Adversarial Networks (GANs) dan Aplikasinya
+### 17. **Pembelajaran Representasi dan Pembelajaran Generatif Menggunakan Autoencoders dan GANs**
+   Mengajarkan cara menggunakan autoencoders dan GANs untuk pembelajaran representasi dan pembelajaran generatif.
 
-18. **Reinforcement Learning**
-    - Q-Learning dan Deep Q-Networks (DQN)
-    - Gradien Kebijakan dan Algoritma Pembelajaran Penguatan
+### 18. **Pembelajaran Penguatan**
+   Fokus pada algoritma pembelajaran penguatan untuk membangun agen cerdas yang dapat belajar strategi terbaik melalui percakapan dan pengalaman.
 
-19. **Training and Deploying TensorFlow Models at Scale**
-    - Menggunakan TensorFlow Serving untuk Produksi
-    - Penyebaran di Platform Cloud dan Perangkat Mobile
+### 19. **Pelatihan dan Penerapan Model TensorFlow pada Skala Besar**
+   Menjelaskan teknik-teknik untuk melatih model TensorFlow pada skala besar, termasuk penggunaan TensorFlow Serving dan platform cloud untuk penerapan.
+
+## Instalasi dan Penggunaan
+
+### 1. Instalasi Keras, TensorFlow, dan Scikit-Learn
+   Untuk menjalankan kode dari buku ini, Anda perlu menginstal Keras, TensorFlow, dan Scikit-Learn menggunakan pip:
 
 ### Lampiran
 A. **Solusi Latihan**
