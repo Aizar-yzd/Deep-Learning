@@ -1,79 +1,124 @@
-# Hands-on Machine Learning with Scikit-Learn, Keras, dan TensorFlow (Edisi Kedua)
+# Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow
 
-Repository ini menyediakan rangkuman dan latihan dari buku **Hands-On Machine Learning with Scikit-Learn, Keras, dan TensorFlow (Edisi Kedua)** oleh **Aurélien Géron**. Buku ini mencakup berbagai topik dalam machine learning dan deep learning, termasuk penggunaan framework dan library populer seperti Scikit-Learn, Keras, dan TensorFlow. Buku ini diperbarui untuk TensorFlow 2.x.
+This repository contains code examples, exercises, and notes based on the book **Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow** by Aurélien Géron. The book provides practical insights into machine learning using Python libraries like Scikit-Learn, Keras, and TensorFlow.
 
-## Daftar Isi
+## Table of Contents
 
-### Bagian I: Dasar-Dasar Machine Learning
+### Part I: The Fundamentals of Machine Learning
+1. [The Machine Learning Landscape](#chapter-1-the-machine-learning-landscape)
+   - What Is Machine Learning?
+   - Why Use Machine Learning?
+   - Examples of Applications
+   - Types of Machine Learning Systems
+   - Main Challenges of Machine Learning
+   - Testing and Validating
+   - Hyperparameter Tuning and Model Selection
 
-1. **Lanskap Machine Learning**  
-   - Pengenalan machine learning, jenis-jenis sistem pembelajaran (terawasi, tidak terawasi, pembelajaran penguatan), dan tantangan dalam machine learning.
+2. [End-to-End Machine Learning Project](#chapter-2-end-to-end-machine-learning-project)
+   - Working with Real Data
+   - Data Cleaning and Preprocessing
+   - Feature Scaling and Transformation Pipelines
+   - Model Selection and Evaluation
+   - Fine-Tuning Your Model
 
-2. **Proyek Machine Learning End-to-End**  
-   - Contoh lengkap proyek machine learning dari pengumpulan data hingga penerapan model, mencakup visualisasi data, preprocessing, pelatihan, dan evaluasi.
+3. [Classification](#chapter-3-classification)
+   - Binary Classification with Scikit-Learn
+   - Performance Measures: Accuracy, Precision, Recall, ROC Curve
+   - Multiclass and Multilabel Classification
+   - Error Analysis
 
-3. **Klasifikasi**  
-   - Teknik untuk tugas klasifikasi, termasuk klasifikasi biner dan multiclass, presisi, recall, dan kurva ROC.
+4. [Training Models](#chapter-4-training-models)
+   - Linear and Polynomial Regression
+   - Gradient Descent and Optimization
+   - Regularization Techniques
+   - Logistic Regression
 
-4. **Pelatihan Model**  
-   - Metode seperti regresi linier, gradient descent, dan regresi polinomial, termasuk teknik regularisasi seperti regresi ridge dan lasso.
+5. [Support Vector Machines](#chapter-5-support-vector-machines)
+   - Linear SVMs and Nonlinear SVMs
+   - SVM Regression and Decision Functions
+   - Kernel Methods
 
-5. **Support Vector Machines**  
-   - Pengenalan SVM untuk tugas klasifikasi dan regresi, menggunakan kernel linier dan non-linier.
+6. [Decision Trees](#chapter-6-decision-trees)
+   - Training and Visualizing Decision Trees
+   - Making Predictions
+   - Regularization and Model Complexity
+   - Instability of Decision Trees
 
-6. **Pohon Keputusan**  
-   - Memahami pohon keputusan untuk klasifikasi dan regresi, termasuk keterbatasannya dan cara menangani overfitting.
+7. [Ensemble Learning and Random Forests](#chapter-7-ensemble-learning-and-random-forests)
+   - Bagging, Pasting, and Random Forests
+   - Boosting and Gradient Boosting
+   - Stacking Classifiers
 
-7. **Ensemble Learning dan Random Forests**  
-   - Ikhtisar metode ensemble seperti bagging, boosting, dan random forests untuk meningkatkan kinerja model.
+8. [Dimensionality Reduction](#chapter-8-dimensionality-reduction)
+   - PCA (Principal Component Analysis)
+   - t-SNE and Other Dimensionality Reduction Techniques
 
-8. **Pengurangan Dimensi**  
-   - Teknik untuk mengurangi dimensi data, seperti PCA, dan masalah "curse of dimensionality".
+9. [Unsupervised Learning Techniques](#chapter-9-unsupervised-learning-techniques)
+   - Clustering: K-Means, DBSCAN
+   - Anomaly Detection and Novelty Detection
+   - Gaussian Mixture Models
 
-9. **Teknik Pembelajaran Tidak Terawasi**  
-   - Metode untuk clustering dan deteksi anomali menggunakan algoritma seperti K-means, DBSCAN, dan Gaussian Mixtures.
+### Part II: Neural Networks and Deep Learning
+10. [Introduction to Artificial Neural Networks with Keras](#chapter-10-introduction-to-artificial-neural-networks-with-keras)
+    - Biological to Artificial Neurons
+    - The Perceptron and MLP (Multilayer Perceptron)
+    - Implementing MLPs with Keras
+    - Hyperparameter Tuning for Neural Networks
 
-### Bagian II: Neural Networks dan Deep Learning
+11. [Training Deep Neural Networks](#chapter-11-training-deep-neural-networks)
+    - Vanishing/Exploding Gradients Problems
+    - Batch Normalization
+    - Transfer Learning
+    - Optimizers and Learning Rate Scheduling
 
-10. **Pengenalan Artificial Neural Networks dengan Keras**  
-    - Dasar-dasar jaringan saraf tiruan (ANNs) dan cara mengimplementasikannya menggunakan Keras.
+12. [Custom Models and Training with TensorFlow](#chapter-12-custom-models-and-training-with-tensorflow)
+    - Customizing Loss Functions and Metrics
+    - Using Custom Layers, Models, and Training Loops
 
-11. **Pelatihan Deep Neural Networks**  
-    - Teknik untuk melatih deep neural networks, termasuk gradient clipping, batch normalization, dan penggunaan lapisan yang telah dilatih sebelumnya.
+13. [Loading and Preprocessing Data with TensorFlow](#chapter-13-loading-and-preprocessing-data-with-tensorflow)
+    - The Data API and TensorFlow Dataset
+    - Preprocessing and Encoding Categorical Features
 
-12. **Model Kustom dan Pelatihan dengan TensorFlow**  
-    - Topik lanjutan tentang pembuatan model kustom, fungsi kerugian, dan optimizers menggunakan TensorFlow.
+14. [Deep Computer Vision Using Convolutional Neural Networks](#chapter-14-deep-computer-vision-using-convolutional-neural-networks)
+    - Convolutional Layers and Pooling
+    - CNN Architectures (LeNet, AlexNet, VGG, ResNet)
+    - Object Detection and Semantic Segmentation
 
-13. **Memuat dan Memproses Data dengan TensorFlow**  
-    - Cara efisien memuat, memproses, dan menangani dataset besar menggunakan TensorFlow's Data API.
+15. [Processing Sequences Using RNNs and CNNs](#chapter-15-processing-sequences-using-rnns-and-cnns)
+    - Recurrent Neural Networks (RNNs) for Sequence Prediction
+    - Handling Long Sequences
+    - Deep RNNs and Forecasting
 
-14. **Deep Computer Vision Menggunakan Convolutional Neural Networks**  
-    - Ikhtisar CNN untuk tugas penglihatan komputer seperti klasifikasi gambar dan deteksi objek.
+16. [Natural Language Processing with RNNs and Attention](#chapter-16-natural-language-processing-with-rnns-and-attention)
+    - Text Generation and Sentiment Analysis
+    - Encoder-Decoder Networks
+    - Attention Mechanisms and Transformers
 
-15. **Memproses Urutan Menggunakan RNNs dan CNNs**  
-    - Menggunakan RNNs dan CNNs untuk pemrosesan urutan seperti peramalan time series dan analisis teks.
+17. [Representation Learning and Generative Learning Using Autoencoders and GANs](#chapter-17-representation-learning-and-generative-learning-using-autoencoders-and-gans)
+    - Autoencoders for Data Compression and Anomaly Detection
+    - Generative Adversarial Networks (GANs) and Applications
 
-16. **Natural Language Processing dengan RNNs dan Attention**  
-    - Penerapan RNNs dan mekanisme perhatian untuk tugas natural language processing seperti generasi teks dan analisis sentimen.
+18. [Reinforcement Learning](#chapter-18-reinforcement-learning)
+    - Q-Learning and Deep Q-Networks (DQN)
+    - Policy Gradients and Reinforcement Learning Algorithms
 
-17. **Representation Learning dan Generative Learning Menggunakan Autoencoders dan GANs**  
-    - Teknik seperti autoencoders dan GANs untuk pembelajaran tidak terawasi dan tugas generatif.
+19. [Training and Deploying TensorFlow Models at Scale](#chapter-19-training-and-deploying-tensorflow-models-at-scale)
+    - Using TensorFlow Serving for Production
+    - Deployment on Cloud Platforms and Mobile Devices
 
-18. **Reinforcement Learning**  
-    - Pengenalan kepada reinforcement learning, termasuk melatih agen untuk melakukan tindakan yang memaksimalkan penghargaan.
+### Appendices
+A. [Exercise Solutions](#appendix-a-exercise-solutions)
+B. [Machine Learning Project Checklist](#appendix-b-machine-learning-project-checklist)
+C. [SVM Dual Problem](#appendix-c-svm-dual-problem)
+D. [Autodiff](#appendix-d-autodiff)
+E. [Other Popular ANN Architectures](#appendix-e-other-popular-ann-architectures)
+F. [Special Data Structures](#appendix-f-special-data-structures)
+G. [TensorFlow Graphs](#appendix-g-tensorflow-graphs)
 
-19. **Pelatihan dan Penerapan Model TensorFlow pada Skala Besar**  
-    - Cara melayani model pada skala besar menggunakan TensorFlow, termasuk menggunakan GPU dan penerapan di cloud.
+---
 
-## Cara Menggunakan Repository Ini
+## How to Use This Repository
 
-Repository ini berisi notebook Jupyter dan skrip Python yang sesuai dengan contoh dan latihan dalam buku. Kode untuk setiap bab disusun dalam direktori terpisah untuk memudahkan navigasi.
-
-### Instalasi
-
-Untuk memulai, clone repository ini dan instal dependensi yang diperlukan:
-
-```bash
-git clone https://github.com/yourusername/handson-ml2.git
-cd handson-ml2
-pip install -r requirements.txt
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/handson-ml2.git
