@@ -1,102 +1,79 @@
-# Laporan Proyek Hands-On Machine Learning
+# Hands-on Machine Learning with Scikit-Learn, Keras, dan TensorFlow (Edisi Kedua)
 
-Selamat datang di repositori proyek untuk mata kuliah Machine Learning. Repositori ini berisi kumpulan Jupyter Notebook yang mereproduksi kode dan menjelaskan konsep-konsep inti dari setiap bab dalam buku referensi utama kami.
+Repository ini menyediakan rangkuman dan latihan dari buku **Hands-On Machine Learning with Scikit-Learn, Keras, dan TensorFlow (Edisi Kedua)** oleh **Aurélien Géron**. Buku ini mencakup berbagai topik dalam machine learning dan deep learning, termasuk penggunaan framework dan library populer seperti Scikit-Learn, Keras, dan TensorFlow. Buku ini diperbarui untuk TensorFlow 2.x.
 
-## Tujuan Proyek
+## Daftar Isi
 
-Tujuan utama dari proyek ini adalah untuk memperdalam pemahaman dan keterampilan praktis dalam mengimplementasikan konsep-konsep inti Machine Learning. Ini dicapai melalui reproduksi kode secara langsung dan penyusunan penjelasan teoretis yang terstruktur berdasarkan materi dari buku:
+### Bagian I: Dasar-Dasar Machine Learning
 
-**Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition** oleh Aurélien Géron.
+1. **Lanskap Machine Learning**  
+   - Pengenalan machine learning, jenis-jenis sistem pembelajaran (terawasi, tidak terawasi, pembelajaran penguatan), dan tantangan dalam machine learning.
 
-## Struktur Repositori
+2. **Proyek Machine Learning End-to-End**  
+   - Contoh lengkap proyek machine learning dari pengumpulan data hingga penerapan model, mencakup visualisasi data, preprocessing, pelatihan, dan evaluasi.
 
-Repositori ini disusun berdasarkan bab dari buku. Setiap folder atau notebook akan sesuai dengan satu bab, berisi:
-1.  **Reproduksi Kode:** Implementasi kode Python yang relevan dari bab tersebut.
-2.  **Penjelasan Teoretis:** Ringkasan dan penjelasan konsep-konsep kunci yang dibahas.
-3.  **Latihan:** Jawaban dan implementasi dari soal-soal latihan di akhir setiap bab.
+3. **Klasifikasi**  
+   - Teknik untuk tugas klasifikasi, termasuk klasifikasi biner dan multiclass, presisi, recall, dan kurva ROC.
 
----
+4. **Pelatihan Model**  
+   - Metode seperti regresi linier, gradient descent, dan regresi polinomial, termasuk teknik regularisasi seperti regresi ridge dan lasso.
 
-## Panduan Chapter
+5. **Support Vector Machines**  
+   - Pengenalan SVM untuk tugas klasifikasi dan regresi, menggunakan kernel linier dan non-linier.
 
-Berikut adalah panduan singkat untuk konten di setiap chapter.
+6. **Pohon Keputusan**  
+   - Memahami pohon keputusan untuk klasifikasi dan regresi, termasuk keterbatasannya dan cara menangani overfitting.
 
-### Bagian I: Fundamental Machine Learning
+7. **Ensemble Learning dan Random Forests**  
+   - Ikhtisar metode ensemble seperti bagging, boosting, dan random forests untuk meningkatkan kinerja model.
 
-#### **Chapter 1: The Machine Learning Landscape**
-* **Isi:** Pengenalan fundamental tentang apa itu Machine Learning, mengapa ia berguna, serta berbagai jenis sistem ML (Supervised, Unsupervised, Reinforcement Learning, dll.). Bab ini juga membahas tantangan utama dalam ML seperti *overfitting* dan *underfitting*.
-* **Status:** Teoretis, tidak ada kode untuk direproduksi selain latihan.
+8. **Pengurangan Dimensi**  
+   - Teknik untuk mengurangi dimensi data, seperti PCA, dan masalah "curse of dimensionality".
 
-#### **Chapter 2: End-to-End Machine Learning Project**
-* **Isi:** Panduan praktis langkah demi langkah untuk sebuah proyek regresi, mulai dari pengambilan data, eksplorasi, persiapan (termasuk pipeline), hingga pelatihan dan penyempurnaan model.
-* **Status:** Praktis, banyak kode yang direproduksi.
+9. **Teknik Pembelajaran Tidak Terawasi**  
+   - Metode untuk clustering dan deteksi anomali menggunakan algoritma seperti K-means, DBSCAN, dan Gaussian Mixtures.
 
-#### **Chapter 3: Classification**
-* **Isi:** Fokus pada tugas klasifikasi menggunakan dataset MNIST. Membahas metrik kinerja seperti matriks konfusi, presisi, recall, dan kurva ROC. Mencakup klasifikasi biner, multikelas, dan multioutput.
-* **Status:** Praktis, implementasi berbagai model klasifikasi.
+### Bagian II: Neural Networks dan Deep Learning
 
-#### **Chapter 4: Training Models**
-* **Isi:** Menyelami algoritma pelatihan untuk model linear. Mencakup Regresi Linear (menggunakan Normal Equation dan Gradient Descent), Regresi Polinomial, kurva pembelajaran, regularisasi (Ridge, Lasso, Elastic Net), dan Regresi Logistik.
-* **Status:** Gabungan teori dan implementasi algoritma dari awal.
+10. **Pengenalan Artificial Neural Networks dengan Keras**  
+    - Dasar-dasar jaringan saraf tiruan (ANNs) dan cara mengimplementasikannya menggunakan Keras.
 
-#### **Chapter 5: Support Vector Machines (SVMs)**
-* **Isi:** Penjelasan mendalam tentang SVM, salah satu model ML yang paling kuat. Mencakup klasifikasi margin besar, SVM non-linear menggunakan *kernel trick*, dan regresi SVM.
-* **Status:** Implementasi dan visualisasi SVM.
+11. **Pelatihan Deep Neural Networks**  
+    - Teknik untuk melatih deep neural networks, termasuk gradient clipping, batch normalization, dan penggunaan lapisan yang telah dilatih sebelumnya.
 
-#### **Chapter 6: Decision Trees**
-* **Isi:** Membahas cara kerja Decision Trees untuk tugas klasifikasi dan regresi. Mencakup algoritma pelatihan CART, regularisasi *hyperparameter*, dan visualisasi pohon keputusan.
-* **Status:** Praktis, melatih dan menyetel Decision Trees.
+12. **Model Kustom dan Pelatihan dengan TensorFlow**  
+    - Topik lanjutan tentang pembuatan model kustom, fungsi kerugian, dan optimizers menggunakan TensorFlow.
 
-#### **Chapter 7: Ensemble Learning and Random Forests**
-* **Isi:** Menjelaskan kekuatan menggabungkan beberapa model (ensembles) untuk mendapatkan kinerja yang lebih baik. Mencakup metode Bagging, Pasting, Boosting (AdaBoost, Gradient Boosting), Stacking, dan pengenalan Random Forests.
-* **Status:** Implementasi berbagai teknik ensemble.
+13. **Memuat dan Memproses Data dengan TensorFlow**  
+    - Cara efisien memuat, memproses, dan menangani dataset besar menggunakan TensorFlow's Data API.
 
-#### **Chapter 8: Dimensionality Reduction**
-* **Isi:** Mengatasi masalah "kutukan dimensi" (*curse of dimensionality*). Memperkenalkan teknik reduksi dimensi utama seperti Principal Component Analysis (PCA), Kernel PCA, dan LLE.
-* **Status:** Visualisasi dan implementasi teknik reduksi dimensi.
+14. **Deep Computer Vision Menggunakan Convolutional Neural Networks**  
+    - Ikhtisar CNN untuk tugas penglihatan komputer seperti klasifikasi gambar dan deteksi objek.
 
-#### **Chapter 9: Unsupervised Learning Techniques**
-* **Isi:** Menjelajahi teknik *unsupervised learning* seperti Clustering (K-Means, DBSCAN), Anomaly Detection, dan Density Estimation menggunakan Gaussian Mixture Models.
-* **Status:** Implementasi berbagai algoritma unsupervised.
+15. **Memproses Urutan Menggunakan RNNs dan CNNs**  
+    - Menggunakan RNNs dan CNNs untuk pemrosesan urutan seperti peramalan time series dan analisis teks.
 
-### Bagian II: Jaringan Saraf Tiruan dan Deep Learning
+16. **Natural Language Processing dengan RNNs dan Attention**  
+    - Penerapan RNNs dan mekanisme perhatian untuk tugas natural language processing seperti generasi teks dan analisis sentimen.
 
-#### **Chapter 10: Introduction to Artificial Neural Networks with Keras**
-* **Isi:** Pengenalan Jaringan Saraf Tiruan (ANN), mulai dari Perceptron hingga Multi-Layer Perceptrons (MLP). Menunjukkan cara membangun, melatih, dan mengevaluasi model menggunakan API Keras (Sequential, Functional, dan Subclassing).
-* **Status:** Fondasi praktis untuk Deep Learning dengan Keras.
+17. **Representation Learning dan Generative Learning Menggunakan Autoencoders dan GANs**  
+    - Teknik seperti autoencoders dan GANs untuk pembelajaran tidak terawasi dan tugas generatif.
 
-#### **Chapter 11: Training Deep Neural Networks**
-* **Isi:** Membahas tantangan dalam melatih jaringan saraf yang dalam, seperti masalah *vanishing/exploding gradients*. Meliputi teknik-teknik penting seperti inisialisasi, fungsi aktivasi, Batch Normalization, *transfer learning*, dan optimizers canggih (Adam, Nadam, dll).
-* **Status:** Teknik-teknik canggih untuk meningkatkan pelatihan model.
+18. **Reinforcement Learning**  
+    - Pengenalan kepada reinforcement learning, termasuk melatih agen untuk melakukan tindakan yang memaksimalkan penghargaan.
 
-#### **Chapter 12: Custom Models and Training with TensorFlow**
-* **Isi:** Menyelami API TensorFlow tingkat rendah untuk kontrol yang lebih besar. Meliputi pembuatan *loss function*, metrik, layer, model, dan *training loop* kustom. Memperkenalkan TF Functions dan AutoGraph untuk optimalisasi.
-* **Status:** Kustomisasi tingkat lanjut di TensorFlow.
+19. **Pelatihan dan Penerapan Model TensorFlow pada Skala Besar**  
+    - Cara melayani model pada skala besar menggunakan TensorFlow, termasuk menggunakan GPU dan penerapan di cloud.
 
-#### **Chapter 13: Loading and Preprocessing Data with TensorFlow**
-* **Isi:** Penggunaan `tf.data` API untuk membangun pipeline input data yang efisien. Membahas format TFRecord, layer pra-pemrosesan Keras, dan TF Transform untuk pra-pemrosesan data dalam skala besar.
-* **Status:** Teknik manajemen data untuk proyek Deep Learning.
+## Cara Menggunakan Repository Ini
 
-#### **Chapter 14: Deep Computer Vision Using Convolutional Neural Networks**
-* **Isi:** Pengantar Convolutional Neural Networks (CNN) untuk Computer Vision. Menjelajahi arsitektur CNN (layer konvolusional dan pooling) dan membahas model-model canggih seperti LeNet, AlexNet, GoogLeNet, dan ResNet untuk tugas deteksi objek dan segmentasi.
-* **Status:** Implementasi CNN untuk tugas-tugas berbasis gambar.
+Repository ini berisi notebook Jupyter dan skrip Python yang sesuai dengan contoh dan latihan dalam buku. Kode untuk setiap bab disusun dalam direktori terpisah untuk memudahkan navigasi.
 
-#### **Chapter 15: Processing Sequences Using RNNs and CNNs**
-* **Isi:** Membahas penggunaan Recurrent Neural Networks (RNNs) untuk memproses data sekuensial seperti time series. Meliputi sel LSTM dan GRU, serta penggunaan CNN 1D untuk sekuens (WaveNet).
-* **Status:** Model untuk data sekuensial.
+### Instalasi
 
-#### **Chapter 16: NLP with RNNs and Attention**
-* **Isi:** Penerapan RNN untuk Natural Language Processing (NLP). Membahas model Encoder-Decoder, mekanisme *attention*, dan arsitektur Transformer yang revolusioner.
-* **Status:** Aplikasi Deep Learning untuk pemrosesan bahasa.
+Untuk memulai, clone repository ini dan instal dependensi yang diperlukan:
 
-#### **Chapter 17: Representation Learning with Autoencoders and GANs**
-* **Isi:** Menjelajahi pembelajaran tak terarah (*unsupervised learning*) untuk *representation learning* menggunakan Autoencoders. Juga memperkenalkan Generative Adversarial Networks (GANs) untuk menghasilkan data baru yang realistis.
-* **Status:** Model generatif dan *representation learning*.
-
-#### **Chapter 18: Reinforcement Learning**
-* **Isi:** Pengantar ke dunia Reinforcement Learning. Mencakup konsep inti seperti *policy gradients*, Q-Learning, dan Deep Q-Networks (DQN). Menggunakan OpenAI Gym dan pustaka TF-Agents.
-* **Status:** Membangun agen cerdas yang belajar dari interaksi.
-
-#### **Chapter 19: Training and Deploying TensorFlow Models at Scale**
-* **Isi:** Membahas siklus hidup model setelah pelatihan. Meliputi cara mendeploy model ke produksi menggunakan TF Serving dan Google Cloud AI Platform, mengoptimalkan model untuk perangkat mobile (TFLite), dan melatih model secara terdistribusi di banyak GPU dan server.
-* **Status:** Membawa model dari lab ke dunia nyata.
+```bash
+git clone https://github.com/yourusername/handson-ml2.git
+cd handson-ml2
+pip install -r requirements.txt
