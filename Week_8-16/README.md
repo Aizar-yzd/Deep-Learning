@@ -66,7 +66,7 @@ Repository ini berisi contoh kode, latihan, dan catatan berdasarkan buku **Hands
 ### 1. Instalasi Keras, TensorFlow, dan Scikit-Learn
    Untuk menjalankan kode dari buku ini, Anda perlu menginstal Keras, TensorFlow, dan Scikit-Learn menggunakan pip:
 
-### Lampiran
+## Lampiran
 A. **Solusi Latihan**
 B. **Checklist Proyek Pembelajaran Mesin**
 C. **Masalah Dual SVM**
